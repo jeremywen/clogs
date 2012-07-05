@@ -1,0 +1,90 @@
+body {
+	padding-top: 10px;
+}
+
+#mainContain {
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.navbar-inner {
+/*	background-color: #3a87ad; */	
+	background: rgb(58,135,173); /* Old browsers */
+	background: -moz-linear-gradient(45deg,  rgba(58,135,173,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(58,135,173,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg,  rgba(58,135,173,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg,  rgba(58,135,173,1) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg,  rgba(58,135,173,1) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(45deg,  rgba(58,135,173,1) 0%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a87ad', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#searchBox {
+	background-color: #fff;
+	border-color: #eee;
+}
+
+.navbar-fixed-bottom .brand {
+	background-image:url('../img/colloggs.png');
+	background-repeat:no-repeat;
+	background-position-x:0px;
+	background-position-y:3px;
+	height: 40px;
+	width: 200px;
+	padding: 0px;
+	margin: 0px;
+	color: #fff;
+}
+
+.logCol {
+	height:800px;
+	overflow: auto;
+}
+	
+.logColNavBarInner {
+
+}
+
+.logColNavBar .brand {
+	color: #fff;
+	padding-right: 0px;
+}
+
+.navbar .nav > li > a {
+	color: #fff;
+/*	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+*/}
+
+.navbar .nav > li > a:hover {
+/*	color: #666;
+*/}
+
+
+.span4 {
+	z-index: 10;
+}
+
+.author {
+	background-color: #9CC7C9;
+}
+
+.icon-arrow-up , .icon-arrow-down {
+}
+
+.icon-chevron-down {
+	margin-top: 5px;
+}
+
+.preContain {
+}
+
+pre {
+	width: 100px;
+	white-space: pre;
+	word-break:normal;
+	word-wrap:normal;
+	overflow: auto;
+}
+
