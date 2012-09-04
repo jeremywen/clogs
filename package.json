@@ -14,7 +14,7 @@
   "main": "clogs.js",
   "bin": {
     "clogs" : "clogs.js"
-  }
+  },
   "engines": {
     "node": "*"
   },
@@ -25,8 +25,6 @@
     "string": "0.2.1-2",
     "open": "0.0.2"
   },
-  "devDependencies": {},
-  "optionalDependencies": {},
   "preferGlobal": "true",
   "keywords": ["git","logs"]
 }
