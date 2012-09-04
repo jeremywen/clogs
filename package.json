@@ -1,6 +1,23 @@
 {
   "name": "clogs",
+  "description": "show git logs for multiple branches in columns in your browser",
   "version": "0.0.1",
+  "homepage": "https://github.com/jeremywen/clogs",
+  "author": {
+    "name": "Jeremy Wentworth",
+    "email": "jeremy@jeremywentworth.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jeremywen/clogs.git"
+  },
+  "main": "clogs.js",
+  "bin": {
+    "clogs" : "clogs.js"
+  }
+  "engines": {
+    "node": "*"
+  },
   "dependencies": {
     "express": "2.5.11",
     "ejs": ">= 0.7.2",
@@ -10,14 +27,6 @@
   },
   "devDependencies": {},
   "optionalDependencies": {},
-  "engines": {
-    "node": "*"
-  },
-  "author": "Jeremy Wentworth <jeremy@jeremywentworth.com> (http://jeremywentworth.com)",
-  "description": "show git logs for multiple branches in columns in your browser",
-  "main": "clogs.js",
   "preferGlobal": "true",
-  "bin": {
-    "clogs" : "clogs.js"
-  }
+  "keywords": ["git","logs"]
 }
