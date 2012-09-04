@@ -1,5 +1,5 @@
 # Clogs
-![Screenshot](https://github.com/jermeywen/clogs/raw/master/screenshot1.png)
+![Screenshot](https://raw.github.com/jeremywen/clogs/master/screenshot1.png)
 
 ## Installation
 
