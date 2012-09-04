@@ -5,8 +5,8 @@ body {
 #mainContain {
 	padding-top:0px;
 	padding-bottom:0px;
-	padding-left:20px;
-	padding-right:20px;
+	padding-left:10px;
+	padding-right:10px;
 }
 
 .navbar-inner {
@@ -26,25 +26,27 @@ body {
 	border-color: #eee;
 }
 
+#mainBrand {
+	font-size: 22px;
+	font-weight: bold;
+	font-family: Arial;
+}
+
 .navbar-fixed-bottom .brand {
-	background-image:url('../img/colloggs.png');
-	background-repeat:no-repeat;
-	background-position-x:0px;
-	background-position-y:3px;
-	height: 40px;
-	width: 200px;
-	padding: 0px;
-	margin: 0px;
+	padding-left: 0;
+	padding-top: 12px;
+	text-shadow: -1px -1px 0px #666;
 	color: #fff;
+	font-size: 16px;
 }
 
 .logCol {
-	height:800px;
+	height:1000px;
 	overflow: auto;
 }
 	
-.logColNavBarInner {
-
+.logColNavBar {
+	margin-bottom: 10px;
 }
 
 .logColNavBar .brand {
@@ -88,3 +90,6 @@ pre {
 	overflow: auto;
 }
 
+.label, .badge {
+	font-weight: normal;
+}

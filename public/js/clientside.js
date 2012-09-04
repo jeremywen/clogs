@@ -1,17 +1,15 @@
 jQuery(function() {
   
-  // Handler for .ready() called.
-
-
   var searchBox = $("#searchBox");
-  var lastSearch = "";
+  var logsSince = $("#logsSince");
+  var ajaxLoader = $("#ajaxLoader");
   var logColHeight = $(".logCol table").height();
-
+  ajaxLoader.hide();
 
   // $(".logContent").draggable({ containment: "window", zIndex:99, appendTo:".row-fluid" });
 
 
-  $(".logContent").on('click',function () {
+  $(".logContent").live('click', function () {
     var logContent = $(this);
     if(logContent.hasClass("showingDetails")){
       logContent.removeClass("showingDetails");
@@ -27,7 +25,7 @@ jQuery(function() {
   });
 
 
-  $(".branchName").click(function () {
+  $(".branchName").live('click', function () {
     var branchNameEl = $(this);
     var branchName = branchNameEl.text();
 
@@ -52,43 +50,38 @@ jQuery(function() {
   });
 
 
-  $(".topLink").click(function () {
+  $(".topLink").live('click', function () {
    $(this).parents(".span4").find(".logCol").animate({ scrollTop: 0 }, "fast");
   });
 
 
-  $(".bottomLink").click(function () {
+  $(".bottomLink").live('click', function () {
    $(this).parents(".span4").find(".logCol").animate({ scrollTop: logColHeight }, "fast");
   });
 
 
-  $(".author").text(function(index, text){
-
-    if(text.indexOf(' ') > -1){
-      var names = text.split(' ');
-      return names[0].charAt(0) + names[1].charAt(0);
-    } else {
-      return text.substring(0,Math.min(2,text.length)).toUpperCase();
-    }
-    
-  }).click(function(){
-    searchBox.val($(this).text());
-  });
-
- 
-  setInterval(function(event){
-      var searchVal = searchBox.val();
-      if(searchVal!==lastSearch){
-        $("td").each(function (){
-          if($(this).text().toLowerCase().indexOf(searchVal.toLowerCase())>-1){
-            $(this).show();
+  searchBox.keyup(function(e) {
+    if(e.which==13){
+      var searchVal = searchBox.val().toLowerCase();
+       $("td").each(function (){
+          var thisEl = $(this);
+          if(thisEl.text().toLowerCase().indexOf(searchVal)>-1){
+            thisEl.show();
           } else {
-            $(this).hide();
+            thisEl.hide();
           }
         });
-      }
-    }
-  ,100);
+     }
+    });
+
+
+  logsSince.keyup(function(e) {
+
+    $.get('setLogsSince/'+$(this).val(),function(data){
+      
+    });
+  });
+
 
 
 }); 
