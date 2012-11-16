@@ -10,7 +10,7 @@
 
 ### Installing Clogs
 ```
-  [sudo] npm install clogs
+  [sudo] npm install ig clogs
 ```
 
 ## Usage
